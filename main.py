@@ -22,7 +22,7 @@ if selected_page == "Home":
     st.header("🌱 Plant Disease Detection for Healthy Farmig")
     st.image("home_page.jpeg", use_container_width=True)
     st.markdown("""
-    Welcome to our smart **Plant Disease Detection System**! 🌿🔎
+    Welcome to our smart **Plant Disease Detection System**! 
 
     This tool allows farmers, gardeners, and researchers to identify plant diseases from images. Upload a picture of a plant, and our AI will analyze it to detect possible infections or issues.
 
@@ -36,7 +36,7 @@ if selected_page == "Home":
     - **Fast Results:** Get predictions in real-time.
     - **Easy to Use:** Clean and simple interface.
 
-    ### 👩‍💻 Get Started
+    ### Get Started
     Use the sidebar to navigate to the **Detect Disease** section and test it out. You can also learn more about this project from the **About** tab.
     """)
 
@@ -49,14 +49,13 @@ elif selected_page == "About":
 
     - **Total Images:** 87,000+ RGB images
     - **Classes:** 38 categories including healthy and infected leaves
-    - **Structure:** 80% for training, 20% for validation. An additional test folder contains 33 images.
+    - **Structure:** 80% for training, 10% for training, 10% for validation.
 
     **Folders:**
-    1. `train/` – 70,295 images  
-    2. `val/` – 17,572 images  
-    3. `test/` – 33 images  
+    1. `train/` 
+    2. `val/`  
+    3. `test/`  
 
-    Original dataset source and more technical details can be found on the related GitHub repository.
     """)
 
 # Disease Detection Page
