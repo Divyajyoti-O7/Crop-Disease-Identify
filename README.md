@@ -1,4 +1,3 @@
-CodeClauseInternship
 # :ear_of_rice: Crop-Disease-Identification  :mag:
 ML-CNN Model Training
 
