@@ -7,9 +7,9 @@ from disease_info import  disease_data
 def predict_disease(image_file):
     model = tf.keras.models.load_model("models/crop_disease_identification_model_pwp.keras")
     image = tf.keras.preprocessing.image.load_img(image_file, target_size=(160, 160))
-    image_array = tf.keras.preprocessing.image.img_to_array(image)
-    image_array = np.expand_dims(image_array, axis=0)  # Convert to batch format
-    prediction = model.predict(image_array)
+    image_arr = tf.keras.preprocessing.image.img_to_array(image)
+    image_arr = np.expand_dims(image_arr, axis=0)  # Convert to batch format
+    prediction = model.predict(image_arr)
     return np.argmax(prediction)  # Return the predicted class index
 
 
