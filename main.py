@@ -26,12 +26,12 @@ if selected_page == "Home":
 
     This tool allows farmers, gardeners, and researchers to identify plant diseases from images. Upload a picture of a plant, and our AI will analyze it to detect possible infections or issues.
 
-    ### 🛠️ How It Works
+    ###  How It Works
     - **Step 1:** Head over to the **Detect Disease** tab and upload a plant leaf image.
     - **Step 2:** The system processes the image using a deep learning model trained on thousands of examples.
     - **Step 3:** You’ll instantly receive the predicted disease class and can take appropriate action.
 
-    ### 🚀 Features
+    ###  Features
     - **High Accuracy:** Powered by a state-of-the-art neural network model.
     - **Fast Results:** Get predictions in real-time.
     - **Easy to Use:** Clean and simple interface.
@@ -42,7 +42,7 @@ if selected_page == "Home":
 
 # About Page
 elif selected_page == "About":
-    st.header("📁 About This Project")
+    st.header(" About This Project")
     st.markdown("""
     ### 📊 Dataset Information
     This project uses an enhanced version of a popular plant disease image dataset. Data augmentation was applied to increase variety.
@@ -89,4 +89,5 @@ elif selected_page == "Detect Disease":
                     st.warning("No additional information found for this disease.")
         else:
             st.warning("Please upload an image before clicking detect.")
+
 
